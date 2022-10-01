@@ -27,7 +27,7 @@ export default class TileView extends Control {
   }
 
   handleMouse = () => {
-    this.update(this.tileModel.item.type)
+    this.update(this.tileModel.getAppearance())
   }
 
   update(item:string) {

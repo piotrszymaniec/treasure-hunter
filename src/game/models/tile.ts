@@ -15,7 +15,6 @@ interface IItem {
 export default class Tile {
   content: string
   item: IItem
-
   visited: boolean
   onVisit: Signal<void> = new Signal()
 
@@ -28,6 +27,9 @@ export default class Tile {
 
   getPoints():number {
     return this.item.points
+  }
+  getAppearance():string {
+    return this.item.type
   }
 
   generateItem(itemsList:Array<IItem>):IItem {
