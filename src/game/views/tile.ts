@@ -2,6 +2,8 @@
 import Control from '../../common/controls';
 import Tile from '../models/tile';
 
+import "./tile.css"
+
 export default class TileView extends Control {
   private tileModel: Tile
 
