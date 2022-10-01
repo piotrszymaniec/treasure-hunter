@@ -2,6 +2,10 @@ body {
   background: url("./assets/images/grass.png")
 }
 
+.game {
+  cursor: url(./assets/images/zzz-white.png), auto !important;
+}
+
 .game-message {
   font-size: 30px;
   font-family: "Share Tech Mono", monospace;

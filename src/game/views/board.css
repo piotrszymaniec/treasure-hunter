@@ -1,6 +1,7 @@
 .board {
   width: fit-content;
   height: fit-content;
+  cursor: url(../../assets/images/axe-emoji.png), auto !important;
 }
 
 .row, .column {
