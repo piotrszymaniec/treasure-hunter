@@ -22,7 +22,6 @@ export default class Tile {
     this.content  = "🌲"
     this.visited = false
     this.item = this.generateItem(Items)
-    console.log(this.generateItem(Items))
   }
 
   getPoints():number {

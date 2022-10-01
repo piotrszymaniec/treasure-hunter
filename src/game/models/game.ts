@@ -36,6 +36,5 @@ export default class GameModel {
   updateScore(points: number) {
     this.score += points
     this.onScoreChange.emit()
-    console.log(this.score)
   }
 }

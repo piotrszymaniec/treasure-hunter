@@ -12,13 +12,9 @@ export default class TileView extends Control {
     this.tileModel = tileModel
 
     tileModel.onVisit.add(this.handleMouse)
-    //todo decide on mouse events
     this.node.onmouseover = (e) => {
       tileModel.visit()
       this.removeMouseOver()
-    }
-    this.node.onclick = () => {
-      console.log('moved mouse into object')
     }
   }
 
