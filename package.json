@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "Treasure gathering game",
-  "name": "Treasure Hunter",
+  "name": "treasure-hunter",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
