@@ -30,7 +30,7 @@ export default class GameModel {
     for(let i: number = 0; i < this.settings.widthSize; i++) {
       this.gameboard[i] = [];
       for(let j: number = 0; j< this.settings.heightSize; j++) {
-        let tile = new Tile();
+        const tile = new Tile();
         tile.onVisit.add(() => this.updateScore(tile.getPoints()))
         tile.onVisit.add(() => this.updateGatheredItems(tile.item))
         this.gameboard[i][j] = tile
