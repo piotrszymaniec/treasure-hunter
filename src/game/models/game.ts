@@ -21,10 +21,6 @@ export default class GameModel {
     return this.gameboard
   }
 
-  getGameboardTile(x:number,y:number):Tile {
-    return this.gameboard[x][y]
-  }
-
   private createBoard() {
     this.gameboard = [];
     for(let i: number = 0; i < this.settings.widthSize; i++) {
