@@ -13,8 +13,8 @@ export default class Game extends Control{
   constructor(parentNode:HTMLElement, settings: ISettings = {widthSize:10, heightSize: 10}) {
     super(parentNode,'div','game')
     this.model = new GameModel(settings)
-    this.message = new Control(parentNode, 'h1', 'game-message','Welcome to the Woods of Malice!')
-    this.boardView = new BoardView(parentNode, this.model)
-    this.scoreView = new ScoreView(parentNode, this.model)
+    this.message = new Control(this.node, 'h1', 'game-message','Welcome to the Woods of Malice!')
+    this.boardView = new BoardView(this.node, this.model)
+    this.scoreView = new ScoreView(this.node, this.model)
   }
 }
