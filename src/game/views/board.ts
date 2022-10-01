@@ -3,6 +3,8 @@ import GameModel from '../models/game';
 import Tile from '../models/tile';
 import TileView from './tile';
 
+import "./board.css"
+
 export default class BoardView extends Control {
   gameModel:GameModel
 
