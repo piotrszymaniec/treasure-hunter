@@ -13,8 +13,6 @@ interface IItem {
 }
 
 export default class Tile {
-  itemType: string
-  points: number
   content: string
   item: IItem
 
@@ -22,14 +20,14 @@ export default class Tile {
   onVisit: Signal<void> = new Signal()
 
   constructor() {
-    this.points = 0
     this.content  = "🌲"
     this.visited = false
-    const {type, points} = this.generateItem(Items)
     this.item = this.generateItem(Items)
-    this.itemType = type
-    this.points = points
     console.log(this.generateItem(Items))
+  }
+
+  getPoints():number {
+    return this.item.points
   }
 
   generateItem(itemsList:Array<IItem>):IItem {
@@ -40,7 +38,6 @@ export default class Tile {
   visit() {
     if (this.visited === false) {
       this.visited = true
-      // this.content = this.itemType
       this.content = this.item.type
       this.onVisit.emit()
     }
