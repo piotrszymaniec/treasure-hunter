@@ -3,16 +3,15 @@ import ISettings from '../ISettings';
 import Tile from './tile';
 
 export default class GameModel {
+  gameboard: Tile[][]
+  settings: ISettings
+  score: number = 0
+  onScoreChange: Signal<void> = new Signal<void>()
 
   constructor(settings:ISettings) {
     this.settings = settings
     this.createBoard()
   }
-
-  gameboard: Tile[][]
-  settings: ISettings
-  score: number = 0
-  onScoreChange: Signal<void> = new Signal<void>()
 
   getGameboardTiles() {
     return this.gameboard
@@ -21,6 +20,7 @@ export default class GameModel {
   getGameboardTile(x:number,y:number):Tile {
     return this.gameboard[x][y]
   }
+
   private createBoard() {
     this.gameboard = [];
     for(let i: number = 0; i < this.settings.widthSize; i++) {
@@ -32,6 +32,7 @@ export default class GameModel {
       }
     }
   }
+
   updateScore(points: number) {
     this.score += points
     this.onScoreChange.emit()
