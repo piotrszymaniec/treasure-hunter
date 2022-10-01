@@ -11,9 +11,9 @@ export default class BoardView extends Control {
   constructor(parentNode: HTMLElement,gameModel:GameModel) {
     super(parentNode,'div','board')
     this.gameModel = gameModel
-    this.gameModel.getGameboardTiles().forEach( (tiles , rowIndex) => {
+    this.gameModel.getGameboardTiles().forEach((tiles) => {
       const wrapperElement = new Control(this.node,'div', 'row')
-      tiles.forEach( (tile: Tile, index:number) => new TileView(wrapperElement, tile))
+      tiles.forEach((tile) => new TileView(wrapperElement, tile))
     })
   }
 }
