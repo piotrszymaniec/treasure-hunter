@@ -13,6 +13,6 @@ I'd like to add many new elements like:
 - saving/loading
 and more
 
-[demo]
+[demo](https://glowing-pie-e59530.netlify.app/)
 
 Goal: Practice coding in those tough days when I don't really feel like I want to. :)
