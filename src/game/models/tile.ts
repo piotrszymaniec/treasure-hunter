@@ -7,7 +7,7 @@ const Items = [
   { type:'💎', points: 50},
 ]
 
-interface IItem {
+export interface IItem {
   type: string;
   points: number;
 }

@@ -1,0 +1,26 @@
+.scores {
+  /* font-family: '04b03',Lato, LatoExtended, sans-serif; */
+  font-family: "Share Tech Mono", monospace;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: 200px;
+  height: 130px;
+  border: 4px rgb(41, 6, 6);
+  border-style: double;
+  border-radius: 5px;
+  background-color: rgb(75, 53, 27);
+  color: white;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.score {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item-display {
+  margin-right: 5px;
+}
