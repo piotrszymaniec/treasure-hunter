@@ -39,7 +39,7 @@ export default class Tile {
   visit() {
     if (this.visited === false) {
       this.visited = true
-      this.content = this.item.type
+      this.content = this.getAppearance()
       this.onVisit.emit()
     }
   }
